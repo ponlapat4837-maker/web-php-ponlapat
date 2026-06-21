@@ -7,11 +7,11 @@
 <body>
     <form action="week5-receive.php" method="get">
         <label>username</label>
-        <input type="text" name="userName">
+        <input type="text" name="userName" required>
         <br>
 
         <label>password</label>
-        <input type="password" name="userPass">
+        <input type="password" name="userPass" required>
         <br>
 
         <label>email</label>
@@ -43,7 +43,11 @@
         <input type="checkbox" name="userHobby[]" value="เล่นกีฬา">เล่นกีฬา
         <br>
 
+        <labal>ความคิดเห็น</labal>
+        <textarea name="userMsg"></textarea>
+        <br>
         <input type="submit" value="ส่งข้อมูล">
+        <input type="reset" value="ล้างข้อมูล">
     </form>
 </body>
 </html>
